@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bites — Premium Culinary Experience</title>
+    <!-- Google Fonts for that clean Dribbble Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">Bites<span>.</span></div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#reserve" class="nav-btn">Book a Table</a></li>
+            </ul>
+            <div class="burger" id="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-text-side">
+                <div class="badge">✨ Top Culinary Experience </div>
+                <h1>Dine unique. Taste <span>extraordinary</span>.</h1>
+                <p>We combine centuries-old traditions with modern gastronomic innovation to serve dishes that linger in your memory forever.</p>
+                <div class="hero-cta-group">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#reserve" class="btn btn-secondary">Reservations</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item"><strong>4.9★</strong> <span>2k+ Reviews</span></div>
+                    <div class="stat-item"><strong>12+</strong> <span>Master Chefs</span></div>
+                </div>
+            </div>
+            <div class="hero-image-side">
+                <div class="main-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Signature dish">
+                </div>
+                <!-- Floating Card elements mimicking Dribbble layout -->
+                <div class="floating-card metric-card">
+                    <div class="icon">🔥</div>
+                    <div>
+                        <h4>Popular Choice</h4>
+                        <p>Truffle Ribeye Steak</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-grid">
+            <div class="about-img-box">
+                <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=80" alt="Chef preparing meal">
+            </div>
+            <div class="about-text-box">
+                <span class="subheading">Our Philosophy</span>
+                <h2>Made with passion, served with perfection</h2>
+                <p>At Bites, our journey begins where the soil meets the sun. We believe every ingredient has a story, and our job is to tell it with artful composition and precision technique.</p>
+                <p>From organic, hyper-local farming partnerships to our state-of-the-art kitchen lab, we never compromise on excellence.</p>
+                <a href="#reserve" class="btn btn-primary">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="menu-header">
+            <span class="subheading">Specials</span>
+            <h2>From Our Kitchen Table To Yours</h2>
+            
+            <!-- Category Tabs -->
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="all">All Dishes</button>
+                <button class="tab-btn" data-category="mains">Mains</button>
+                <button class="tab-btn" data-category="desserts">Desserts</button>
+                <button class="tab-btn" data-category="drinks">Signature Drinks</button>
+            </div>
+        </div>
+
+     <div class="menu-grid" id="menuGrid">
+            <!-- Item 1: Mains -->
+            <div class="menu-card" data-category="mains">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Smoked Ribs">
+                    <span class="price-tag">$34</span>
+                </div>
+                <div class="card-body">
+                    <h3>Smoked Rosemary Prime Ribs</h3>
+                    <p>Slow-roasted bone-in ribeye infused with fresh hand-picked rosemary smoke.</p>
+                </div>
+            </div>
+
+            <!-- Item 2: Mains -->
+            <div class="menu-card" data-category="mains">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=500&q=80" alt="Salmon">
+                    <span class="price-tag">$29</span>
+                </div>
+                <div class="card-body">
+                    <h3>Pan-Seared Atlantic Salmon</h3>
+                    <p>Served over garlic asparagus spears drizzled with signature citrus-herb emulsion.</p>
+                </div>
+            </div>
+
+            <!-- Item 3: Mains (NEW) -->
+            <div class="menu-card" data-category="mains">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80" alt="Truffle Risotto">
+                    <span class="price-tag">$26</span>
+                </div>
+                <div class="card-body">
+                    <h3>Wild Mushroom & Truffle Risotto</h3>
+                    <p>Creamy Arborio rice, sautéed chanterelles, shaved black truffle, and aged parmigiano reggiano.</p>
+                </div>
+            </div>
+
+            <!-- Item 4: Mains (NEW) -->
+            <div class="menu-card" data-category="mains">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=500&q=80" alt="Wagyu Burger">
+                    <span class="price-tag">$28</span>
+                </div>
+                <div class="card-body">
+                    <h3>Bites Signature Wagyu Burger</h3>
+                    <p>A5 Wagyu beef patty, caramelized onion jam, truffle aioli, and melted gruyère on a brioche bun.</p>
+                </div>
+            </div>
+
+            <!-- Item 5: Desserts -->
+            <div class="menu-card" data-category="desserts">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="Chocolate Cake">
+                    <span class="price-tag">$14</span>
+                </div>
+                <div class="card-body">
+                    <h3>Decadent Molten Lava Fondant</h3>
+                    <p>Dark Belgian chocolate cake with a molten core, served with pure vanilla bean gelato.</p>
+                </div>
+            </div>
+
+            <!-- Item 6: Desserts (NEW) -->
+            <div class="menu-card" data-category="desserts">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=500&q=80" alt="Matcha Panna Cotta">
+                    <span class="price-tag">$13</span>
+                </div>
+                <div class="card-body">
+                    <h3>Velvet Matcha Panna Cotta</h3>
+                    <p>Silky white chocolate and Uji matcha infusion, topped with a fresh raspberry coulis.</p>
+                </div>
+            </div>
+
+            <!-- Item 7: Desserts (NEW) -->
+            <div class="menu-card" data-category="desserts">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=500&q=80" alt="Artisan Donuts">
+                    <span class="price-tag">$12</span>
+                </div>
+                <div class="card-body">
+                    <h3>Spiced Cinnamon Beignets</h3>
+                    <p>Fluffy pastry pillows dusted with spiced sugar, served with a warm dark chocolate dip.</p>
+                </div>
+            </div>
+
+            <!-- Item 8: Drinks -->
+            <div class="menu-card" data-category="drinks">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=500&q=80" alt="Old Fashioned">
+                    <span class="price-tag">$16</span>
+                </div>
+                <div class="card-body">
+                    <h3>Smoked Bourbon Old Fashioned</h3>
+                    <p>Premium aged bourbon, aromatic bitters, cedar wood smoke presentation block.</p>
+                </div>
+            </div>
+
+            <!-- Item 9: Drinks (NEW) -->
+            <div class="menu-card" data-category="drinks">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=500&q=80" alt="Botanical Cocktail">
+                    <span class="price-tag">$15</span>
+                </div>
+                <div class="card-body">
+                    <h3>Botanical Lavender Spritz</h3>
+                    <p>Empress gin, organic lavender syrup, fresh lemon juice, topped with sparkling prosecco.</p>
+                </div>
+            </div>
+
+            <!-- Item 10: Drinks (NEW) -->
+            <div class="menu-card" data-category="drinks">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=500&q=80" alt="Cold Brew Mocktail">
+                    <span class="price-tag">$11</span>
+                </div>
+                <div class="card-body">
+                    <h3>Nitro Cold Brew Tonic (Non-Alc)</h3>
+                    <p>Nitrogen-infused cold brew coffee, artisanal tonic water, and a twist of flamed orange peel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Slider Section -->
+    <section id="testimonials" class="testimonial-section">
+        <div class="testimonial-container">
+            <span class="subheading">Testimonials</span>
+            <div class="testimonial-slider">
+                <div class="slide active">
+                    <p class="quote">“An absolute masterpiece of design and dining. The rosemary smoke prime ribs were incredibly tender, and the staff treated us like royalty. Easily the best meal I've had all year!”</p>
+                    <div class="user-info">
+                        <h4>Marcus Vance</h4>
+                        <span>Culinary Critic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table Reservation Form Section -->
+    <section id="reserve" class="reserve-section">
+        <div class="reserve-card">
+            <div class="reserve-text">
+                <h2>Secure Your Experience</h2>
+                <p>We recommend booking up to two weeks in advance to secure optimal dining lounge seating.</p>
+            </div>
+            <form id="bookingForm" class="modern-form">
+                <div class="input-grid">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <input type="date" id="date" required>
+                    <input type="time" id="time" required>
+                    <select id="guests" required>
+                        <option value="" disabled selected>Number of Guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="6">6+ Guests</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">Bites<span>.</span></div>
+                <p>Elevating the art of dining through unparalleled taste profiles and bespoke culinary care.</p>
+            </div>
+            <div class="footer-hours">
+                <h4>Hours of Operation</h4>
+                <p>Mon - Fri: 5:00 PM - 11:00 PM</p>
+                <p>Sat - Sun: 4:00 PM - Midnight</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bites Restaurant Group. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
